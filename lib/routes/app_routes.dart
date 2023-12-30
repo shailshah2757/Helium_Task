@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tasks/presentation/device_screen/device_screen.dart';
 import 'package:tasks/presentation/login_screen/login_screen.dart';
 import 'package:tasks/presentation/automations_screen/automations_screen.dart';
 
@@ -22,5 +23,6 @@ class AppRoutes {
   static Map<String, WidgetBuilder> routes = {
     loginScreen: (context) => LoginScreen(),
     automationsScreen: (context) => AutomationsScreen(),
+    deviceScreen: (context) => DeviceScreen(),
   };
 }

@@ -115,4 +115,30 @@ class ImageConstant {
   static String imgCalendar = '$imagePath/img_calendar.svg';
 
   static String imageNotFound = 'assets/images/image_not_found.png';
+
+  static String door = "$imagePath/door.svg";
+
+  static String airConditioner = "$imagePath/air_conditioner.svg";
+
+  static String redLight = "$imagePath/red_light.svg";
+
+  static String blueLight = "$imagePath/blue_light.svg";
+
+  static String light = "$imagePath/light.svg";
+
+  static String speakerWhite = "$imagePath/speaker.svg";
+
+  static String airConditionerWhite = "$imagePath/air_conditioner_white.svg";
+
+  static String tvIcon = "$imagePath/tv_icon.svg";
+
+  static String smartWatch = "$imagePath/smartwatch.svg";
+
+  static String ovenIcon = "$imagePath/oven.svg";
+
+  static String smartLock = "$imagePath/smartlock.svg";
+
+  static String menuIcon = "$imagePath/menu.svg";
+
+  static String temperatureBar = "$imagePath/temperature_bar.svg";
 }

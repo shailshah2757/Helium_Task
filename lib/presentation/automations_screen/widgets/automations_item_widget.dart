@@ -34,6 +34,17 @@ class AutomationsItemWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.end,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          // Container(
+          //   width: 20.v,
+          //   height: 20.v,
+          //   margin: EdgeInsets.only(left: 10.h),
+          //   child: ClipPath(
+          //     clipper: SemiCircleClipper(),
+          //     child: Container(
+          //       color: Colors.white,
+          //     ),
+          //   ),
+          // ),
           Container(
             width: 188.h,
             margin: EdgeInsets.only(top: 1.v),
@@ -47,21 +58,42 @@ class AutomationsItemWidget extends StatelessWidget {
             ),
           ),
           Padding(
-              padding: EdgeInsets.only(
-                left: 55.h,
-                top: 9.v,
-                bottom: 12.v,
+            padding: EdgeInsets.only(
+              left: 55.h,
+              top: 9.v,
+              bottom: 12.v,
+            ),
+            child: CustomIconButton(
+              height: 23.adaptSize,
+              width: 23.adaptSize,
+              // padding: EdgeInsets.all(5.h),
+              child: CustomImageView(
+                imagePath: ImageConstant.addIcon,
               ),
-              child: CustomIconButton(
-                height: 23.adaptSize,
-                width: 23.adaptSize,
-                // padding: EdgeInsets.all(5.h),
-                child: CustomImageView(
-                  imagePath: ImageConstant.addIcon,
-                ),
-              ))
+            ),
+          ),
         ],
       ),
     );
+  }
+}
+
+class SemiCircleClipper extends CustomClipper<Path> {
+  @override
+  Path getClip(Size size) {
+    final path = Path();
+    path.moveTo(size.width / 2, 0);
+    path.arcToPoint(
+      Offset(size.width / 2, size.height),
+      radius: Radius.circular(size.width / 2),
+      clockwise: true,
+    );
+    path.lineTo(size.width / 2, 0);
+    return path;
+  }
+
+  @override
+  bool shouldReclip(covariant CustomClipper<Path> oldClipper) {
+    return false;
   }
 }

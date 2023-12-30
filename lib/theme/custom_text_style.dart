@@ -91,7 +91,7 @@ class CustomTextStyles {
         fontWeight: FontWeight.w700,
       );
   static get titleMediumInterBlack900Bold =>
-      theme.textTheme.titleMedium!.inter.copyWith(
+      theme.textTheme.titleMedium!.inter.poppins.copyWith(
         color: appTheme.black900,
         fontWeight: FontWeight.w700,
       );
