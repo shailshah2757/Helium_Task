@@ -33,7 +33,7 @@ class DeviceScreen extends StatelessWidget {
               List<String> descriptions = [
                 "94%",
                 "45%",
-                "22*C",
+                "22°C",
                 "30%",
                 "25%",
                 "20%",

@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
           theme: theme,
           title: 'Tasks',
           debugShowCheckedModeBanner: false,
-          initialRoute: AppRoutes.deviceScreen,
+          initialRoute: AppRoutes.appNavigationScreen,
           routes: AppRoutes.routes,
         );
       },

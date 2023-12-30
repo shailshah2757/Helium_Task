@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tasks/presentation/app_navigation_screen/app_navigation_screen.dart';
 import 'package:tasks/presentation/device_screen/device_screen.dart';
 import 'package:tasks/presentation/login_screen/login_screen.dart';
 import 'package:tasks/presentation/automations_screen/automations_screen.dart';
@@ -24,5 +25,6 @@ class AppRoutes {
     loginScreen: (context) => LoginScreen(),
     automationsScreen: (context) => AutomationsScreen(),
     deviceScreen: (context) => DeviceScreen(),
+    appNavigationScreen: (context) => AppNavigationScreen(),
   };
 }

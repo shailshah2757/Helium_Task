@@ -91,7 +91,7 @@ class DeviceItemWidget extends StatelessWidget {
                   ),
                   color: isPinkCircle ? Color(0xFFF77695) : null,
                 ),
-                padding: EdgeInsets.all(7),
+                padding: EdgeInsets.all(8),
                 child: CustomImageView(
                   imagePath: circleImages[index],
                   height: imageSize,
