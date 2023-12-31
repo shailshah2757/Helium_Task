@@ -43,7 +43,7 @@ class AppDecoration {
             color: theme.colorScheme.secondaryContainer,
             spreadRadius: 2.h,
             blurRadius: 2.h,
-            offset: Offset(
+            offset: const Offset(
               0,
               0,
             ),
@@ -57,7 +57,7 @@ class AppDecoration {
             color: theme.colorScheme.secondaryContainer,
             spreadRadius: 2.h,
             blurRadius: 2.h,
-            offset: Offset(
+            offset: const Offset(
               0,
               0,
             ),

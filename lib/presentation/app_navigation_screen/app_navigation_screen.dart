@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tasks/core/app_export.dart';
 
 class AppNavigationScreen extends StatelessWidget {
-  AppNavigationScreen({Key? key})
+  const AppNavigationScreen({Key? key})
       : super(
           key: key,
         );
@@ -11,7 +11,7 @@ class AppNavigationScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Color(0xFFFFFFFF),
+        backgroundColor: const Color(0xFFFFFFFF),
         body: SizedBox(
           width: 375.h,
           child: Column(
@@ -20,7 +20,7 @@ class AppNavigationScreen extends StatelessWidget {
               Expanded(
                 child: SingleChildScrollView(
                   child: Container(
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Color(0xFFFFFFFF),
                     ),
                     child: Column(
@@ -49,6 +49,14 @@ class AppNavigationScreen extends StatelessWidget {
                             AppRoutes.deviceScreen,
                           ),
                         ),
+                        _buildScreenTitle(
+                          context,
+                          screenTitle: "Air Conditioner",
+                          onTapScreenTitle: () => onTapScreenTitle(
+                            context,
+                            AppRoutes.productUiAirConditionerScreen,
+                          ),
+                        ),
                       ],
                     ),
                   ),
@@ -65,7 +73,7 @@ class AppNavigationScreen extends StatelessWidget {
     double screenWidth = MediaQuery.of(context).size.width;
 
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: Colors.white,
       ),
       child: Column(

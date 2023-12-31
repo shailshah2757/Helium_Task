@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:tasks/core/app_export.dart';
-import 'package:tasks/widgets/custom_image_view.dart';
 
 // ignore: must_be_immutable
 class AppbarTitleImage extends StatelessWidget {

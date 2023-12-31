@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:tasks/core/app_export.dart';
-import 'package:tasks/theme/theme_helper.dart';
 
 // ignore: must_be_immutable
 class CustomIconButton extends StatelessWidget {

@@ -176,7 +176,7 @@ class LoginScreen extends StatelessWidget {
 
   /// Section Widget
   Widget _buildSignIn(BuildContext context) {
-    return CustomElevatedButton(
+    return const CustomElevatedButton(
       text: "Sign In",
     );
   }

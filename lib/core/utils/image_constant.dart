@@ -141,4 +141,12 @@ class ImageConstant {
   static String menuIcon = "$imagePath/menu.svg";
 
   static String temperatureBar = "$imagePath/temperature_bar.svg";
+
+  static String cool = "$imagePath/cool.svg";
+
+  static String hot = "$imagePath/hot.svg";
+
+  static String air = "$imagePath/air.svg";
+
+  static String eco = "$imagePath/eco.svg";
 }

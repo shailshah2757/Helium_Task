@@ -3,6 +3,7 @@ import 'package:tasks/presentation/app_navigation_screen/app_navigation_screen.d
 import 'package:tasks/presentation/device_screen/device_screen.dart';
 import 'package:tasks/presentation/login_screen/login_screen.dart';
 import 'package:tasks/presentation/automations_screen/automations_screen.dart';
+import 'package:tasks/presentation/product_ui_air_conditioner_screen/product_ui_air_conditioner_screen.dart';
 
 class AppRoutes {
   static const String loginScreen = '/login_screen';
@@ -23,8 +24,9 @@ class AppRoutes {
 
   static Map<String, WidgetBuilder> routes = {
     loginScreen: (context) => LoginScreen(),
-    automationsScreen: (context) => AutomationsScreen(),
+    automationsScreen: (context) => const AutomationsScreen(),
     deviceScreen: (context) => DeviceScreen(),
-    appNavigationScreen: (context) => AppNavigationScreen(),
+    appNavigationScreen: (context) => const AppNavigationScreen(),
+    productUiAirConditionerScreen: (context) => ProductUiAirConditionerScreen()
   };
 }

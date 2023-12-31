@@ -1,21 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:tasks/core/app_export.dart';
+import 'package:tasks/widgets/custom_icon_button.dart';
 
 // ignore: must_be_immutable
-class AppbarTitle extends StatelessWidget {
-  AppbarTitle({
+class AppbarTrailingIconbutton extends StatelessWidget {
+  AppbarTrailingIconbutton({
     Key? key,
-    required this.text,
+    this.imagePath,
     this.margin,
     this.onTap,
-    this.alignment,
   }) : super(
           key: key,
         );
 
-  String text;
-
-  Alignment? alignment;
+  String? imagePath;
 
   EdgeInsetsGeometry? margin;
 
@@ -29,10 +27,13 @@ class AppbarTitle extends StatelessWidget {
       },
       child: Padding(
         padding: margin ?? EdgeInsets.zero,
-        child: Text(
-          text,
-          style: CustomTextStyles.titleLargePoppins.copyWith(
-            color: appTheme.black900,
+        child: CustomIconButton(
+          padding: const EdgeInsets.all(5),
+          height: 35.adaptSize,
+          width: 35.adaptSize,
+          decoration: IconButtonStyleHelper.fillGray,
+          child: CustomImageView(
+            imagePath: ImageConstant.imgCalendar,
           ),
         ),
       ),

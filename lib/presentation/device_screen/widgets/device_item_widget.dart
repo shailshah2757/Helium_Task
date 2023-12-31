@@ -23,7 +23,7 @@ class DeviceItemWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     bool isPinkCircle = index == 1 || index == 2;
     String statusText = isPinkCircle ? "ON" : "OFF";
-    Color textColor = isPinkCircle ? Color(0xFFF77695) : Colors.black;
+    Color textColor = isPinkCircle ? const Color(0xFFF77695) : Colors.black;
 
     return Container(
       height: 150.v,
@@ -71,7 +71,7 @@ class DeviceItemWidget extends StatelessWidget {
             child: Text(
               descriptions[index],
               style: TextStyle(
-                color: isPinkCircle ? Color(0xFFF77695) : Colors.black,
+                color: isPinkCircle ? const Color(0xFFF77695) : Colors.black,
                 fontSize: 12,
                 fontFamily: 'Poppins',
               ),
@@ -86,12 +86,12 @@ class DeviceItemWidget extends StatelessWidget {
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   border: Border.all(
-                    color: isPinkCircle ? Color(0xFFEC7591) : Colors.grey,
+                    color: isPinkCircle ? const Color(0xFFEC7591) : Colors.grey,
                     width: 2.0,
                   ),
-                  color: isPinkCircle ? Color(0xFFF77695) : null,
+                  color: isPinkCircle ? const Color(0xFFF77695) : null,
                 ),
-                padding: EdgeInsets.all(8),
+                padding: const EdgeInsets.all(8),
                 child: CustomImageView(
                   imagePath: circleImages[index],
                   height: imageSize,

@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:tasks/core/app_export.dart';
 import 'package:tasks/widgets/base_button.dart';
-import 'package:tasks/theme/custom_text_style.dart';
 
 class CustomOutlinedButton extends BaseButton {
-  CustomOutlinedButton({
-    Key? key,
+  const CustomOutlinedButton({
+    super.key,
     this.decoration,
     this.leftIcon,
     this.rightIcon,
@@ -50,8 +49,8 @@ class CustomOutlinedButton extends BaseButton {
   }
 
   Widget get buildOutlinedButtonWidget => Container(
-        height: this.height ?? 56.v,
-        width: this.width ?? double.maxFinite,
+        height: height ?? 56.v,
+        width: width ?? double.maxFinite,
         margin: margin,
         decoration: decoration,
         child: OutlinedButton(

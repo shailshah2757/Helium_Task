@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tasks/core/app_export.dart';
-import 'package:tasks/core/utils/image_constant.dart';
 import 'package:tasks/widgets/custom_icon_button.dart';
-import 'package:tasks/widgets/custom_image_view.dart';
 
 // ignore: must_be_immutable
 class AutomationsItemWidget extends StatelessWidget {

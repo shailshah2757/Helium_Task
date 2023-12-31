@@ -1,7 +1,5 @@
-import 'dart:ui';
 import 'package:tasks/core/app_export.dart';
 import 'package:flutter/material.dart';
-import 'package:tasks/theme/theme_helper.dart';
 
 /// A class that offers pre-defined button styles for customizing button appearance.
 class CustomButtonStyles {

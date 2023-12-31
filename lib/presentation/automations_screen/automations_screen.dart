@@ -121,7 +121,7 @@ class AutomationsScreen extends StatelessWidget {
                   padding: EdgeInsets.only(left: 20.h, bottom: 9.v),
                   child: Text("AI Recommended",
                       style: CustomTextStyles.titleMediumBlack90018)),
-              Spacer(),
+              const Spacer(),
               CustomOutlinedButton(
                   height: 24.v,
                   width: 71.h,
@@ -163,7 +163,7 @@ class AutomationsScreen extends StatelessWidget {
         left: 9.h,
       ),
       child: ListView.separated(
-        physics: NeverScrollableScrollPhysics(),
+        physics: const NeverScrollableScrollPhysics(),
         shrinkWrap: true,
         separatorBuilder: (context, index) {
           return SizedBox(height: 10.v);
