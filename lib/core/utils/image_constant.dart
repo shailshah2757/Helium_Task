@@ -149,4 +149,8 @@ class ImageConstant {
   static String air = "$imagePath/air.svg";
 
   static String eco = "$imagePath/eco.svg";
+
+  static String warm = "$imagePath/warm.svg";
+
+  static String color = "$imagePath/color.svg";
 }

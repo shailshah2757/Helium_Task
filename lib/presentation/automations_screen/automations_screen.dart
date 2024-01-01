@@ -157,25 +157,29 @@ class AutomationsScreen extends StatelessWidget {
       },
     ];
 
-    return Padding(
-      padding: EdgeInsets.only(
-        right: 9.h,
-        left: 9.h,
-      ),
-      child: ListView.separated(
-        physics: const NeverScrollableScrollPhysics(),
-        shrinkWrap: true,
-        separatorBuilder: (context, index) {
-          return SizedBox(height: 10.v);
-        },
-        itemCount: automationData.length,
-        itemBuilder: (context, index) {
-          return AutomationsItemWidget(
-            name: automationData[index]["name"],
-            background: automationData[index]["background"],
-          );
-        },
-      ),
+    return Column(
+      children: [
+        Padding(
+          padding: EdgeInsets.only(
+            right: 9.h,
+            left: 9.h,
+          ),
+          child: ListView.separated(
+            physics: const NeverScrollableScrollPhysics(),
+            shrinkWrap: true,
+            separatorBuilder: (context, index) {
+              return SizedBox(height: 10.v);
+            },
+            itemCount: automationData.length,
+            itemBuilder: (context, index) {
+              return AutomationsItemWidget(
+                name: automationData[index]["name"],
+                background: automationData[index]["background"],
+              );
+            },
+          ),
+        ),
+      ],
     );
   }
 

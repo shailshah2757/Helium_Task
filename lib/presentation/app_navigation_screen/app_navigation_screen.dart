@@ -57,6 +57,14 @@ class AppNavigationScreen extends StatelessWidget {
                             AppRoutes.productUiAirConditionerScreen,
                           ),
                         ),
+                        _buildScreenTitle(
+                          context,
+                          screenTitle: "Outdoor Bulb",
+                          onTapScreenTitle: () => onTapScreenTitle(
+                            context,
+                            AppRoutes.productUiOutdoorBulbScreen,
+                          ),
+                        ),
                       ],
                     ),
                   ),
