@@ -65,6 +65,14 @@ class AppNavigationScreen extends StatelessWidget {
                             AppRoutes.productUiOutdoorBulbScreen,
                           ),
                         ),
+                        _buildScreenTitle(
+                          context,
+                          screenTitle: "Speaker",
+                          onTapScreenTitle: () => onTapScreenTitle(
+                            context,
+                            AppRoutes.productUiSpeakerScreen,
+                          ),
+                        ),
                       ],
                     ),
                   ),

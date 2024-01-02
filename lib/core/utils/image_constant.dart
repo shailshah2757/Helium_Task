@@ -153,4 +153,10 @@ class ImageConstant {
   static String warm = "$imagePath/warm.svg";
 
   static String color = "$imagePath/color.svg";
+
+  static String wifi = "$imagePath/imgWIFI.svg";
+
+  static String rewind = "$imagePath/rewind.svg";
+
+  static String forward = "$imagePath/forward.svg";
 }

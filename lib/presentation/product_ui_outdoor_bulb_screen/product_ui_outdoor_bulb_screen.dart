@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tasks/core/app_export.dart';
 import 'package:tasks/widgets/custom_icon_button.dart';
-import 'package:tasks/widgets/custom_radio_button.dart';
 
 // ignore: must_be_immutable
 class ProductUiOutdoorBulbScreen extends StatelessWidget {
@@ -66,209 +65,37 @@ class ProductUiOutdoorBulbScreen extends StatelessWidget {
                   SizedBox(
                     height: 66.v,
                   ),
-                  SizedBox(
-                    height: 290.adaptSize,
-                    width: 290.adaptSize,
-                    child: Stack(
-                      alignment: Alignment.topLeft,
-                      children: [
-                        Padding(
-                          padding: EdgeInsets.only(
-                            top: 72.v,
-                            right: 42.h,
-                          ),
-                          child: CustomIconButton(
-                            height: 41.adaptSize,
-                            width: 41.adaptSize,
-                            alignment: Alignment.topCenter,
-                            child: CustomImageView(),
-                          ),
-                        ),
-                        Align(
-                          alignment: Alignment.center,
-                          child: Padding(
-                            padding: EdgeInsets.only(
-                              left: 50.h,
-                              top: 64.v,
-                            ),
-                            child: Row(
-                              children: [
-                                Padding(
-                                  padding:
-                                      EdgeInsets.only(top: 8.v, bottom: 9.v),
-                                  child: CustomIconButton(
-                                    height: 41.adaptSize,
-                                    width: 41.adaptSize,
-                                    padding: EdgeInsets.all(
-                                      13.h,
-                                    ),
-                                    decoration:
-                                        IconButtonStyleHelper.outlinePrimary,
-                                    child: CustomImageView(
-                                      imagePath: ImageConstant.imgGroup4,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        _buildIntensiveSection(context),
-                        Column(
-                          children: [
-                            Container(
-                              width: 290.5,
-                              height: 283,
-                              child: Stack(
-                                children: [
-                                  Positioned(
-                                    left: 207.35,
-                                    top: 71.50,
-                                    child: Container(
-                                      width: 41.06,
-                                      height: 41.06,
-                                      decoration: const ShapeDecoration(
-                                        shape: OvalBorder(),
-                                        color: Color(0xFFECEDEE),
-                                      ),
-                                    ),
-                                  ),
-                                  Positioned(
-                                    left: 42.09,
-                                    top: 71.50,
-                                    child: Container(
-                                      width: 41.06,
-                                      height: 40.28,
-                                      decoration: ShapeDecoration(
-                                        shape: OvalBorder(
-                                          side: BorderSide(
-                                            width: 1.03,
-                                            color:
-                                                Colors.white.withOpacity(0.8),
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  Positioned(
-                                    left: 118.05,
-                                    top: 36.25,
-                                    child: SizedBox(
-                                      width: 55,
-                                      height: 14.72,
-                                      child: Text(
-                                        "intensive",
-                                        style: CustomTextStyles
-                                            .labelLargePrimaryContainer,
-                                      ),
-                                    ),
-                                  ),
-                                  Positioned(
-                                    left: 200,
-                                    top: 64,
-                                    child: Transform(
-                                      transform: Matrix4.identity()
-                                        ..translate(0.0, 0.0)
-                                        ..rotateZ(1.57),
-                                      child: Container(
-                                        width: 56,
-                                        height: 110,
-                                        decoration: ShapeDecoration(
-                                          color: Color(0xFFECEDEE),
-                                          shape: RoundedRectangleBorder(
-                                            side: BorderSide(
-                                              width: 1.2,
-                                              color: Colors.white
-                                                  .withOpacity(0.08),
-                                            ),
-                                            borderRadius:
-                                                BorderRadius.circular(30),
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  const Positioned(
-                                    left: 118,
-                                    top: 74,
-                                    child: SizedBox(
-                                      width: 60,
-                                      height: 35,
-                                      child: Text(
-                                        "75%",
-                                        style: TextStyle(
-                                          color: Colors.black,
-                                          fontSize: 30,
-                                          fontFamily: "Inter",
-                                          fontWeight: FontWeight.w400,
-                                          height: 0,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  Positioned(
-                                    left: 0,
-                                    top: 0,
-                                    right: 5,
-                                    child: Container(
-                                      width: 290.50,
-                                      height: 280,
-                                      decoration: const ShapeDecoration(
-                                        shape: OvalBorder(),
-                                        color: Color(0xFFECEDEE),
-                                      ),
-                                    ),
-                                  ),
-                                  Positioned(
-                                    left: 0,
-                                    top: 0,
-                                    right: 5,
-                                    child: Container(
-                                      width: 290.50,
-                                      height: 80,
-                                      decoration: const ShapeDecoration(
-                                        shape: OvalBorder(),
-                                        gradient: LinearGradient(
-                                          begin: Alignment(-0.76, -0.65),
-                                          end: Alignment(0.76, 0.65),
-                                          colors: [
-                                            Color(0xFF38B6FF),
-                                            Color(0x3A65B7EA),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                  )
-                                ],
-                              ),
-                            )
-                          ],
-                        ),
-                        // Align(
-                        //   alignment: Alignment.center,
-                        //   child: SizedBox(
-                        //     height: 290.adaptSize,
-                        //     width: 290.adaptSize,
-                        //     child: CircularProgressIndicator(
-                        //       strokeWidth: 10,
-                        //       value: 0.5,
-                        //       color: theme.colorScheme.onError,
-                        //     ),
-                        //   ),
-                        // ),
-                        // CustomImageView(
-                        //   imagePath: ImageConstant.imgPlusBlack900,
-                        //   height: 12.adaptSize,
-                        //   width: 12.adaptSize,
-                        //   alignment: Alignment.topRight,
-                        //   margin: EdgeInsets.only(
-                        //     top: 87.v,
-                        //     right: 56.h,
-                        //   ),
-                        // )
-                      ],
-                    ),
-                  )
+                  // SizedBox(
+                  //   height: 290.adaptSize,
+                  //   width: 290.adaptSize,
+                  //   child: Stack(
+                  //     alignment: Alignment.topLeft,
+                  //     children: [
+                  //       Padding(
+                  //         padding: EdgeInsets.only(
+                  //           top: 72.v,
+                  //           right: 42.h,
+                  //         ),
+                  //         child: CustomIconButton(
+                  //           height: 41.adaptSize,
+                  //           width: 41.adaptSize,
+                  //           alignment: Alignment.topCenter,
+                  //           child: CustomImageView(),
+                  //         ),
+                  //       ),
+                  //       Align(
+                  //         alignment: Alignment.center,
+                  //         child: Padding(
+                  //           padding: EdgeInsets.only(
+                  //             left: 50.h,
+                  //             top: 64.v,
+                  //           ),
+                  //         ),
+                  //       ),
+                  //       _buildIntensiveSection(context),
+                  //     ],
+                  //   ),
+                  // )
                 ],
               ),
             ),
@@ -428,22 +255,6 @@ class ProductUiOutdoorBulbScreen extends StatelessWidget {
   }
 
   Widget _buildIntensiveSection(BuildContext context) {
-    return Align(
-      alignment: Alignment.topRight,
-      child: Padding(
-        padding: EdgeInsets.only(
-          top: 20.v,
-          right: 33.h,
-        ),
-        child: CustomRadioButton(
-          text: "intensive",
-          value: "intensive",
-          groupValue: radioGroup,
-          onChange: (value) {
-            radioGroup = value;
-          },
-        ),
-      ),
-    );
+    return Row();
   }
 }
